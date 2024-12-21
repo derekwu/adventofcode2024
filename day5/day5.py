@@ -60,8 +60,6 @@ class Solver(object):
     return None
 
 
-
-
   def validate_and_fix_ordering(self, ordering):
     seen = set()
     valid_ordering = True
@@ -96,11 +94,6 @@ class Solver(object):
         if postorder in relevant_num_to_preorder:
           relevant_num_to_preorder[postorder].remove(num_to_remove)
     return (False, fixed_ordering)
-
-
-
-
-    
 
     
   def solve_part_1(self):
