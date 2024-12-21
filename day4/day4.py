@@ -1,5 +1,3 @@
-from enum import Enum
-
 FILENAME = './input.txt'
 
 XMAS = 'XMAS'
@@ -71,8 +69,6 @@ class Solver(object):
     if not self.check_corner_chars(i + 1, j - 1, i - 1, j + 1):
       return False
     return True
-
-
     
   def solve_part_1(self):
     total_valid_xmas = 0
